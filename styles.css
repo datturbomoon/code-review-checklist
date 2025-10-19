@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #e0e0e0;
+  color: #3a3a3a;
+  padding: 2.5rem 3rem;
+}
+
+.title {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  color: #25924f;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.checklist-container {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.checklist {
+  padding: 2rem 2rem 1rem;
+  margin: 0 auto 2rem;
+  border-radius: 2rem;
+  max-width: 600px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1),
+    -8px -8px 16px rgba(255, 255, 255, 0.7);
+}
+
+.sub-title {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  color: #25924f;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #acacace6;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+li label {
+  margin: 1rem 0;
+  font-size: .95rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+  margin-top: 4px;
+  flex-shrink: 0;
+  accent-color: #25924f;
+}
+
+@media screen and (max-width: 1000px) {
+  .checklist-container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    padding: 1.5rem 2rem;
+  }
+
+  .checklist-container {
+    margin: 1.5rem auto;
+  }
+}
+
+li label:has(input[type="checkbox"]:checked) {
+  color: #888;
+}
+
+#reset {
+  font-family: inherit;
+  font-size: .85rem;
+  padding: 10px 18px;
+  background-color: rgba(200, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  border: none;
+  color: #fff;
+  border-radius: 9px;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#reset:hover {
+  background-color: rgba(200, 0, 0, 0.8);
+}
