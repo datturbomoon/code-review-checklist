@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code Review Checklist</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <h1 class="title">Code Review Checklist</h1>
 
@@ -13,38 +15,58 @@
     <div class="checklist">
       <h2 class="sub-title">Code Quality</h2>
       <ul id="quality">
-        <li><label for="item1"><input type="checkbox" name="item1" id="item1">Code is readable, consistent, and follows naming conventions</label></li>
-        <li><label for="item2"><input type="checkbox" name="item2" id="item2">No commented-out or unused code remains</label></li>
-        <li><label for="item3"><input type="checkbox" name="item3" id="item3">Code follows project style and formatting standards</label></li>
-        <li><label for="item4"><input type="checkbox" name="item4" id="item4">Functions and components are modular and reusable</label></li>
-        <li><label for="item5"><input type="checkbox" name="item5" id="item5">Code avoids duplication (DRY principle)</label></li>
-        <li><label for="item6"><input type="checkbox" name="item6" id="item6">Proper error handling and fallback mechanisms implemented</label></li>
-        <li><label for="item7"><input type="checkbox" name="item7" id="item7">Edge cases are handled gracefully</label></li>
-        <li><label for="item8"><input type="checkbox" name="item8" id="item8">Logging is appropriate and not excessive</label></li>
-        <li><label for="item9"><input type="checkbox" name="item9" id="item9">Performance optimizations considered (loops, queries, DOM use)</label></li>
-        <li><label for="item10"><input type="checkbox" name="item10" id="item10">All dependencies are necessary, safe, and up-to-date</label></li>
+        <li><label for="item1"><input type="checkbox" name="item1" id="item1">Code is readable, consistent, and follows
+            naming conventions</label></li>
+        <li><label for="item2"><input type="checkbox" name="item2" id="item2">No commented-out or unused code
+            remains</label></li>
+        <li><label for="item3"><input type="checkbox" name="item3" id="item3">Code follows project style and formatting
+            standards</label></li>
+        <li><label for="item4"><input type="checkbox" name="item4" id="item4">Functions and components are modular and
+            reusable</label></li>
+        <li><label for="item5"><input type="checkbox" name="item5" id="item5">Code avoids duplication (DRY
+            principle)</label></li>
+        <li><label for="item6"><input type="checkbox" name="item6" id="item6">Proper error handling and fallback
+            mechanisms implemented</label></li>
+        <li><label for="item7"><input type="checkbox" name="item7" id="item7">Edge cases are handled gracefully</label>
+        </li>
+        <li><label for="item8"><input type="checkbox" name="item8" id="item8">Logging is appropriate and not
+            excessive</label></li>
+        <li><label for="item9"><input type="checkbox" name="item9" id="item9">Performance optimizations considered
+            (loops, queries, DOM use)</label></li>
+        <li><label for="item10"><input type="checkbox" name="item10" id="item10">All dependencies are necessary, safe,
+            and up-to-date</label></li>
       </ul>
     </div>
 
     <div class="checklist">
       <h2 class="sub-title">Security & Compliance</h2>
       <ul id="security">
-        <li><label for="item11"><input type="checkbox" name="item11" id="item11">Sensitive data is not hardcoded or logged</label></li>
-        <li><label for="item12"><input type="checkbox" name="item12" id="item12">Input validation and sanitization are implemented</label></li>
-        <li><label for="item13"><input type="checkbox" name="item13" id="item13">Authentication and authorization are correctly enforced</label></li>
-        <li><label for="item14"><input type="checkbox" name="item14" id="item14">No exposure of credentials, tokens, or API keys</label></li>
-        <li><label for="item15"><input type="checkbox" name="item15" id="item15">HTTPS, encryption, and secure storage are used where applicable</label></li>
-        <li><label for="item16"><input type="checkbox" name="item16" id="item16">Open-source licenses are compliant (MIT, Apache, etc.)</label></li>
+        <li><label for="item11"><input type="checkbox" name="item11" id="item11">Sensitive data is not hardcoded or
+            logged</label></li>
+        <li><label for="item12"><input type="checkbox" name="item12" id="item12">Input validation and sanitization are
+            implemented</label></li>
+        <li><label for="item13"><input type="checkbox" name="item13" id="item13">Authentication and authorization are
+            correctly enforced</label></li>
+        <li><label for="item14"><input type="checkbox" name="item14" id="item14">No exposure of credentials, tokens, or
+            API keys</label></li>
+        <li><label for="item15"><input type="checkbox" name="item15" id="item15">HTTPS, encryption, and secure storage
+            are used where applicable</label></li>
+        <li><label for="item16"><input type="checkbox" name="item16" id="item16">Open-source licenses are compliant
+            (MIT, Apache, etc.)</label></li>
       </ul>
     </div>
 
     <div class="checklist">
       <h2 class="sub-title">Testing & Documentation</h2>
       <ul id="testing">
-        <li><label for="item17"><input type="checkbox" name="item17" id="item17">Code is covered by automated tests where appropriate</label></li>
-        <li><label for="item18"><input type="checkbox" name="item18" id="item18">All tests pass successfully before merge</label></li>
-        <li><label for="item19"><input type="checkbox" name="item19" id="item19">Documentation is up-to-date and accurate</label></li>
-        <li><label for="item20"><input type="checkbox" name="item20" id="item20">Code changes reviewed and approved by peers</label></li>
+        <li><label for="item17"><input type="checkbox" name="item17" id="item17">Code is covered by automated tests
+            where appropriate</label></li>
+        <li><label for="item18"><input type="checkbox" name="item18" id="item18">All tests pass successfully before
+            merge</label></li>
+        <li><label for="item19"><input type="checkbox" name="item19" id="item19">Documentation is up-to-date and
+            accurate</label></li>
+        <li><label for="item20"><input type="checkbox" name="item20" id="item20">Code changes reviewed and approved by
+            peers</label></li>
       </ul>
     </div>
   </div>
@@ -54,4 +76,5 @@
   <script src="script.js"></script>
 
 </body>
+
 </html>
